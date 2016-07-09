@@ -9,3 +9,10 @@
     border-top-style: solid;
     border-bottom: solid;
 }
+
+.target{
+    background-color: red;
+    height: auto;
+    border-top-style: solid;
+    border-bottom: solid;
+}
