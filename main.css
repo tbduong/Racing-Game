@@ -1,0 +1,11 @@
+.row1{
+  background-color: blue;
+  border-top-style: solid;
+  border-bottom: solid;
+}
+
+.row2{
+    background-color: green;
+    border-top-style: solid;
+    border-bottom: solid;
+}
