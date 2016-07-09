@@ -1,18 +1,8 @@
-.row1{
-  background-color: blue;
-  border-top-style: solid;
-  border-bottom: solid;
-}
-
-.row2{
-    background-color: green;
-    border-top-style: solid;
-    border-bottom: solid;
-}
-
-.target{
-    background-color: red;
-    height: auto;
-    border-top-style: solid;
-    border-bottom: solid;
+.playerOne {
+  position: relative;
+  top:40px;
+  left:0;
+  width: 40px;
+  height: 40px;
+  background-color: red;
 }
