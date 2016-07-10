@@ -20,26 +20,26 @@ var winCount = 0;
 
 //keypress function
 $(document).on("keypress", function movePlayer1(event) {
-  if ((playerOneCount>=60) || (winCount===1)){
+  if ((playerOneCount>=50) || (winCount===1)){
     console.log("Player 1 is the Winner!");
   } else if (event.which == (113)){ //q key
-    $('.playerOne').stop().animate({left: '+=50', speed: 'fast'});
+    $('.playerOne').stop(true, false).animate({left: '+=50'});
     playerOneCount ++;
     console.log(playerOneCount);{
-  if(playerOneCount === 65){
+  if(playerOneCount === 50){
     alert("PLAYER 1 wins!");
   }
 }
 }
 });
 $(document).on("keypress", function movePlayer2(event){
-  if ((playerTwoCount>=60) || (winCount===1)){
-    console.log("Player 3 is the Winner!");
+  if ((playerTwoCount>=50) || (winCount===1)){
+    console.log("Player 2 is the Winner!");
   } else if (event.which == (112)){ //p key
-      $('.playerTwo').stop().animate({left: '+=50', speed: 'fast'});
+      $('.playerTwo').stop(true, false).animate({left: '+=50'});
       playerTwoCount ++;
       console.log(playerTwoCount);
-    if(playerTwoCount === 65){
+    if(playerTwoCount === 50){
     alert("PLAYER 2 wins!");
   }
 }
@@ -52,28 +52,3 @@ $(document).on("keypress", function movePlayer2(event){
     });
 
 });
-// $(document).on("keypress", function movePlayer3(event) {
-//   if ((playerThreeCount>=60) || (winCount===1)){
-//     console.log("Player 3 is the Winner!");
-//     //stops player from going on.
-//   } else if (event.which == (122)){ //z key
-//   $('.playerThree').stop().animate({left: '+=50', speed: 'fast'});
-//   playerFourCount ++;
-//   console.log(playerThreeCount);
-//   if(playerThreeCount === 65){
-//     alert("PLAYER 3 wins!");
-//   }
-// }
-//
-// $(document).on("keypress", function movePlayer4(event) {
-//   if ((playerFourCount>=60) || (winCount===1)){
-//     console.log("Player 4 is the Winner!");
-//     //stops player from going on.
-//   } else if (event.which == (109)){ //m key
-//   $('.playerFour').stop().animate({left: '+=50', speed: 'fast'});
-//   playerFourCount ++;
-//   console.log(playerFourCount);
-//   if(playerFourCount === 65){
-//     alert("PLAYER 4 wins!");
-//   }
-// }
