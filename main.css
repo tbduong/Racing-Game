@@ -1,41 +1,21 @@
 .playerOne {
-  position: relative;
-  top:40px;
-  left:0;
-  width: 40px;
-  height: 40px;
-  background-color: red;
+  position:relative;
 }
 
 .playerTwo {
   position: relative;
-  top:40px;
-  left:0;
-  width: 40px;
-  height: 40px;
-  background-color: blue;
 }
 .playerThree {
   position: relative;
-  top:40px;
-  left:0;
-  width: 40px;
-  height: 40px;
-  background-color: green;
 }
 .playerFour {
   position: relative;
-  top:40px;
-  left:0;
-  width: 40px;
-  height: 40px;
-  background-color: yellow;
 }
 
 .row1 {
     border-style: solid;
     height:130px;
-   overflow:hidden;
+
 }
 .row2 {
     border-style: solid;
@@ -45,7 +25,8 @@
 
 .row3 {
     border-style: solid;
-    height:130px;
+    height:130px
+
 }
 
 .row4 {
@@ -67,7 +48,7 @@ h1 {
 }
 
 body {
-    background-image: url(http://www.blastr.com/sites/blastr/files/game-thrones-map.jpg);
+    background-image: url(http://www.win10themes.com/wp-content/uploads/2015/08/Underwater-Desktop-Wallpaper.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
 }
