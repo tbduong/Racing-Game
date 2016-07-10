@@ -5,15 +5,33 @@
 
 $(document).on("ready", function(){
 
-$(document).on("keypress", function movePlayer(event) {
-  if (event.which == (113, 87)); //q key
-    $('.playerOne').animate({left: '+=100'});
-  });
+var counter = 0;
 
-  // if ('.playerOne' === '.col-md-1'){
-  //   alert("winner!");
-  //
-  // });
+//keypress function
+$(document).on("keypress", function movePlayer(event) {
+  if (counter=100){
+
+
+  }else if (event.which == (113)){ //q key
+  $('.playerOne').animate({left: '+=20', speed: 'fast'});{
+
+    }
+  }
+
+  {if (event.which == (112)){ //p key
+  $('.playerTwo').animate({left: '+=20', speed: 'fast'});
+  }
+
+
+
+
+
+}
+
+});
+
+//win conditions
+
 
 
 
