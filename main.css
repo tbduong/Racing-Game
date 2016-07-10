@@ -6,3 +6,36 @@
   height: 40px;
   background-color: red;
 }
+
+.playerTwo {
+  position: relative;
+  top:40px;
+  left:0;
+  width: 40px;
+  height: 40px;
+  background-color: blue;
+}
+
+.row1 {
+    border-style: solid;
+    height:110px;
+}
+.row2 {
+    border-style: solid;
+    height:110px;
+
+}
+
+.row3 {
+    border-style: solid;
+    height:110px;
+}
+
+.row4 {
+    border-style: solid;
+    height:110px;
+}
+
+h1 {
+    text-align: center;
+}
