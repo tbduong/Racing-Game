@@ -43,3 +43,8 @@ body {
 p {
     color: white;
 }
+
+h3 {
+    color: white;
+    font-weight: bold;
+}

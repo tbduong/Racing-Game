@@ -6,10 +6,7 @@ $(document).on("ready", function(){
 $('.jumbotron').hide();
 var playerOneCount = 0;
 var playerTwoCount = 0;
-// var playerThreeCount = 0;
-// var playerFourCount = 0;
 var winCount = 0;
-  console.log ("sanity check");
 
 //win conditions
 // function win (winner) {
@@ -18,16 +15,22 @@ var winCount = 0;
 //      winCount++;
 // }
 
+
+
+
+
+
 //keypress function
 $(document).on("keypress", function movePlayer1(event) {
-  if ((playerOneCount>=50) || (winCount===1)){
+  if ((playerOneCount>=60) || (winCount===1)){
     console.log("Player 1 is the Winner!");
   } else if (event.which == (113)){ //q key
-    $('.playerOne').stop(true, false).animate({left: '+=50'});
+    $('.playerOne').stop(true, false).animate({left: '+=60'});
     playerOneCount ++;
     console.log(playerOneCount);{
-  if(playerOneCount === 50){
-    alert("PLAYER 1 wins!");
+  if(playerOneCount === 60){
+    winCount ++;
+  $("#playerOneScore").append(winCount); //Win counter on scoreboard
   }
 }
 }
@@ -36,11 +39,11 @@ $(document).on("keypress", function movePlayer2(event){
   if ((playerTwoCount>=50) || (winCount===1)){
     console.log("Player 2 is the Winner!");
   } else if (event.which == (112)){ //p key
-      $('.playerTwo').stop(true, false).animate({left: '+=50'});
+      $('.playerTwo').stop(true, false).animate({left: '+=60'});
       playerTwoCount ++;
       console.log(playerTwoCount);
     if(playerTwoCount === 50){
-    alert("PLAYER 2 wins!");
+    console.log("PLAYER 2 wins!");
   }
 }
 
