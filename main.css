@@ -1,9 +1,11 @@
 .playerOne {
   position:absolute;
+  color:white;
 }
 
 .playerTwo {
   position: absolute;
+  color:white;
 }
 
 .row {
@@ -38,7 +40,7 @@ p {
     font-size: 40px;
 }
 
-h2 {
+h3 {
     color: white;
     font-weight: bold;
     font-size: 50px;
