@@ -21,7 +21,7 @@ h1 {
     color: white;
     font-weight: bolder;
     font-stretch: ultra-expanded;
-    opacity: .7;
+    opacity: .8;
 }
 
 .btn{
@@ -30,9 +30,9 @@ h1 {
 }
 
 body {
-    background-image: url(http://www.win10themes.com/wp-content/uploads/2015/08/Underwater-Desktop-Wallpaper.jpg);
+    background-image: url("file:///users/tiffaniduong/wdi/development/Racing-Game/UnderwaterBackground.jpeg");
     background-repeat: no-repeat;
-    background-size:cover;
+    background-position: center;
 }
 
 p {
@@ -43,12 +43,19 @@ p {
 h3 {
     color: white;
     font-weight: bold;
-    font-size: 40px;
-    opacity: .7;
+    font-size: 30px;
+    opacity: .9;
     text-align: center;
 }
 
 h4 {
+  color: white;
+  opacity: .8;
+  text-align: center;
+  outline-color: black;
+}
+
+h5 {
   color: white;
   opacity: .7;
   text-align: center;

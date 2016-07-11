@@ -10,42 +10,68 @@ var winCount= 0;
 
 //keypress function
 $(document).on("keypress", function movePlayer1(event) {
-  if ((playerOneCount>=35) || (winCount===1)){
+  if ((playerOneCount>=32) || (winCount===1)){
     console.log("Player 1 is the Winner!");
 
   } else if (event.which == (113)){ //q key
-    $('.playerOne').stop(true, false).animate({left: '+=60'});
+    $('.playerOne').css({"left": '+=35'});
     playerOneCount ++;
     console.log(playerOneCount);
-//     {if(playerOneCount === 35){
-//       $("#result").append("PLAYER 1 wins!");
-//       winCount ++;
-//       $("#playerOneScore").append(winCount); //Win counter on scoreboard
-//   }
-// }
-}
+}   if(playerOneCount === 32){
+      $("#result").text("PLAYER 1 wins!");
+      winCount ++;
+      $("#playerOneScore").text(winCount);
+  }
+
 });
+
 $(document).on("keypress", function movePlayer2(event){
-  if ((playerTwoCount>=35) || (winCount===1)){
+  if ((playerTwoCount>=32) || (winCount===1)){
     console.log("Player 2 is the Winner!");
   } else if (event.which == (112)){ //p key
-      $('.playerTwo').stop(true, false).animate({left: '+=60'});
+      $('.playerTwo').css({"left": '+=35'});
       playerTwoCount ++;
       console.log(playerTwoCount);
+  }   if(playerTwoCount === 35){
+      $("#result").text("PLAYER 2 wins!");
+      winCount ++;
+      $("#playerTwoScore").text(winCount);
 
-//     if(playerTwoCount === 35){
-//       $("#result").append("PLAYER 2 wins!");
-//       winCount ++;
-//       $("#playerTwoScore").append(winCount);
-//   }
-// }
+//TODO: atm the scoreboard continues to add to playerOneScore from both players' wins. Player 2 wins accumulate inside there as well...
+//need to make two separate variables winOne and winTwo, so append into player Two's box
+
+
+
+
+  // if (function winCheck(num){
+  //   if(num === 1 ) {
+  //     if(playerOneCount === 32) {
+  //       $("#result").text("PLAYER 1 wins!");
+  //       winCount ++;
+  //       $("#playerOneScore").text(winCount);//Win counter on scoreboard
+  //     }
+  //   } else if (num === 2) {
+  //     if(playerTwoCount === 32) {
+  //       $("#result").text("PLAYER 2 wins!");
+  //       winCount ++;
+  //       $("#playerTwoScore").text(winCount); //Win counter on scoreboard
+  //     }
+  //   }
+  // });
   }
+
+
 });
+
 
 
 //Reset Button
-    $('.btn').on("click", function (reset){
-      location.reload();
-    });
+    // function $reset(){
+    //     $(".btn").on("click", function(){
+    //
+    //
+    //
+    //     });
+    // }
 
 });
