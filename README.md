@@ -4,8 +4,8 @@ The goal of this project is to create a simple left to right racing game with th
 #Directions:
 **Choose your seahorse:**
 
--Seahorse 1: key Q
--Seahorse 2: key P
+* Seahorse 1: key Q
+* Seahorse 2: key P
 
 **How to race?:**
 Tap your key to pass your seahorse through the finish line! But, if you tap too fast... your seahorse will not listen to you! Keep an even pace!
