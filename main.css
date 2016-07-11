@@ -43,6 +43,13 @@ p {
 h3 {
     color: white;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 40px;
     opacity: .7;
+    text-align: center;
+}
+
+h4 {
+  color: white;
+  opacity: .7;
+  text-align: center;
 }

@@ -8,13 +8,6 @@ var playerOneCount = 0;
 var playerTwoCount = 0;
 var winCount= 0;
 
-//win conditions
-// function win (winner) {
-//      $( '.jumbotron' ).show( 15 );
-//      $('.winning').text(winner + "is the winner!");
-//      winCount++;
-// }
-
 //keypress function
 $(document).on("keypress", function movePlayer1(event) {
   if ((playerOneCount>=35) || (winCount===1)){
@@ -24,12 +17,12 @@ $(document).on("keypress", function movePlayer1(event) {
     $('.playerOne').stop(true, false).animate({left: '+=60'});
     playerOneCount ++;
     console.log(playerOneCount);
-    {if(playerOneCount === 35){
-      $("#result").append("PLAYER 1 wins!");
-      winCount ++;
-      $("#playerOneScore").append(winCount); //Win counter on scoreboard
-  }
-}
+//     {if(playerOneCount === 35){
+//       $("#result").append("PLAYER 1 wins!");
+//       winCount ++;
+//       $("#playerOneScore").append(winCount); //Win counter on scoreboard
+//   }
+// }
 }
 });
 $(document).on("keypress", function movePlayer2(event){
@@ -40,13 +33,13 @@ $(document).on("keypress", function movePlayer2(event){
       playerTwoCount ++;
       console.log(playerTwoCount);
 
-    if(playerTwoCount === 35){
-      $("#result").append("PLAYER 2 wins!");
-      winCount ++;
-      $("#playerTwoScore").append(winCount);
+//     if(playerTwoCount === 35){
+//       $("#result").append("PLAYER 2 wins!");
+//       winCount ++;
+//       $("#playerTwoScore").append(winCount);
+//   }
+// }
   }
-}
-
 });
 
 
