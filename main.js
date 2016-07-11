@@ -3,55 +3,67 @@
 //create animate function that moves player to target
   //have it trigger on KEYPRESS, key #
 $(document).on("ready", function(){
-$('.jumbotron').hide();
-var playerOneCount = 0;
-var playerTwoCount = 0;
-var winCount = 0;
-
-//win conditions
-// function win (winner) {
-//      $( '.jumbotron' ).show( 15 );
-//      $('.winning').text(winner + "is the winner!");
-//      winCount++;
-// }
-
-
-
-
+// $('.jumbotron').hide();
+// // var playerOneCount = 0;
+// // var playerTwoCount = 0;
+// // var winCountOne = 0;
+// // var winCountTwo = 0;
 
 
 //keypress function
-$(document).on("keypress", function movePlayer1(event) {
-  if ((playerOneCount>=60) || (winCount===1)){
-    console.log("Player 1 is the Winner!");
-  } else if (event.which == (113)){ //q key
-    $('.playerOne').stop(true, false).animate({left: '+=60'});
-    playerOneCount ++;
-    console.log(playerOneCount);{
-  if(playerOneCount === 60){
-    winCount ++;
-  $("#playerOneScore").append(winCount); //Win counter on scoreboard
-  }
-}
-}
-});
-$(document).on("keypress", function movePlayer2(event){
-  if ((playerTwoCount>=50) || (winCount===1)){
-    console.log("Player 2 is the Winner!");
-  } else if (event.which == (112)){ //p key
-      $('.playerTwo').stop(true, false).animate({left: '+=60'});
-      playerTwoCount ++;
-      console.log(playerTwoCount);
-    if(playerTwoCount === 50){
-    console.log("PLAYER 2 wins!");
-  }
-}
+//Player One
+$(document).on("keypress", function (event) {
+    if(event.which == 112) { //p key
+        $(".playerOne").css("left", ("+=30"));
+          if ($(".container").width() <= $(".playerOne").offset().left + $(".playerTwo").outerWidth()){
+            stopMove();
+        }
+    }
+
 
 });
+
+// $(document).on("keypress", function movePlayer1(event) {
+//   if ((playerOneCount>=50) || (winCountOne===1)){
+//   } else if (event.which == (113)){ //q key
+//     $('.playerOne').stop(true, false).animate({left: '+=70px'},{speed:
+//     'fast'});
+//     playerOneCount ++;
+//     console.log(playerOneCount);{
+//       if(playerOneCount === 50){
+//     winCountOne ++;
+//   $("#scoreboard").text("Seahorse One is the winner!"); //Player One wins!
+//       }
+//     }
+//   }
+// });
+
+//Player Two
+$(document).on("keypress", function (event) {
+    if(event.which == 112) { //p key
+        $(".playerTwo").css("left", ("+=30"));
+        if ($(".container").width() <= $(".playerTwo").offset().left + $(".playerTwo").outerWidth());{
+          stopMove();
+        }
+    }
+
+
+});
+
+function stopMove() {
+    $('.playerOne').clearQueue();
+    $('.playerOne').stop();
+    $('.playerTwo').clearQueue();
+    $('.playerTwo').stop();
+    $(document).off("keypress");
+    }
+
 
 //Reset Button
     $('.btn').on("click", function (reset){
       location.reload();
     });
+
+
 
 });
