@@ -25,9 +25,9 @@ $(document).on("keypress", function movePlayer1(event) {
     playerOneCount ++;
     console.log(playerOneCount);
     {if(playerOneCount === 35){
-    alert("PLAYER 1 wins!");
-    winCount ++;
-  $("#playerOneScore").append(winCount); //Win counter on scoreboard
+      $("#result").append("PLAYER 1 wins!");
+      winCount ++;
+      $("#playerOneScore").append(winCount); //Win counter on scoreboard
   }
 }
 }
@@ -39,14 +39,16 @@ $(document).on("keypress", function movePlayer2(event){
       $('.playerTwo').stop(true, false).animate({left: '+=60'});
       playerTwoCount ++;
       console.log(playerTwoCount);
+
     if(playerTwoCount === 35){
-    alert("PLAYER 2 wins!");
-    winCount ++;
-    $("#playerTwoScore").append(winCount);
+      $("#result").append("PLAYER 2 wins!");
+      winCount ++;
+      $("#playerTwoScore").append(winCount);
   }
 }
 
 });
+
 
 //Reset Button
     $('.btn').on("click", function (reset){
