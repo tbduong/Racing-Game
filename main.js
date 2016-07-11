@@ -15,11 +15,10 @@ $(document).on("ready", function(){
 $(document).on("keypress", function (event) {
     if(event.which == 112) { //p key
         $(".playerOne").css("left", ("+=30"));
-          if ($(".container").width() <= $(".playerOne").offset().left + $(".playerTwo").outerWidth()){
+          if ($(".row").width() <= $(".playerOne").offset().left + $(".playerOne").outerWidth()){
             stopMove();
         }
     }
-
 
 });
 
@@ -40,9 +39,9 @@ $(document).on("keypress", function (event) {
 
 //Player Two
 $(document).on("keypress", function (event) {
-    if(event.which == 112) { //p key
+    if(event.which == 113) { //p key
         $(".playerTwo").css("left", ("+=30"));
-        if ($(".container").width() <= $(".playerTwo").offset().left + $(".playerTwo").outerWidth());{
+        if ($(".row").width() <= $(".playerTwo").offset().left + $(".playerTwo").outerWidth());{
           stopMove();
         }
     }

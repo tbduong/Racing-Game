@@ -10,7 +10,6 @@
     height:130px;
     margin-right: 15px;
     margin-left: 15px;
-
 }
 
 h1 {
@@ -20,6 +19,7 @@ h1 {
     color: white;
     font-weight: bolder;
     font-stretch: ultra-expanded;
+    opacity: .7;
 }
 
 .btn{
@@ -42,4 +42,5 @@ h2 {
     color: white;
     font-weight: bold;
     font-size: 50px;
+    opacity: .7;
 }
