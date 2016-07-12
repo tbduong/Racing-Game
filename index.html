@@ -1,61 +1,61 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-		<link rel="stylesheet" href="main.css">
-		<script src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
-		<!-- Handlebars
-  	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>-->
-    <script src="main.js"></script>
-    <title>Finding Derby</title>
-  </head>
-  <body>
-    <div class="container-fluid">
-        <div class= "col-lg-12">
-          <h1> Finding Derby </h1>
-          <h4> Tap Q to make Seahorse 1 go. </h4>
-          <h4> Tap P to make Seahorse 2 go. </h4>
-          <h5> Hit the reset button to race again! </h5>
-        <button class="btn btn-primary center "><span class="glyphicon glyphicon-refresh"></span> Race Again!</button>
-      </div>
-</div>
-<br>
-</br>
-    <!-- Div row for P1 -->
-        <div class="row">
-              <div class="playerOne">
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  		<link rel="stylesheet" href="main.css">
+  		<script src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
+  		<!-- Handlebars
+    	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>-->
+      <script src="main.js"></script>
+      <title>Finding Derby</title>
+    </head>
+    <body>
+      <div class="container-fluid">
+          <div class= "col-lg-12">
+            <h1> Finding Derby </h1>
+            <h4> Tap Q to make Seahorse 1 go. </h4>
+            <h4> Tap P to make Seahorse 2 go. </h4>
+            <h5> Hit the reset button to race again! </h5>
+          <button class="btn btn-primary center "><span class="glyphicon glyphicon-refresh"></span> Race Again!</button>
+        </div>
+  </div>
+  <br>
+  </br>
+      <!-- Div row for P1 -->
+          <div class="row">
+                <div class="playerOne">
+                  <img src="file:///users/tiffaniduong/wdi/development/Racing-Game/seahorse.png">
+                  P1
+                </div>
+          </div>
+    <!-- Div row for P2 -->
+          <div class="row">
+              <div class="playerTwo">
                 <img src="file:///users/tiffaniduong/wdi/development/Racing-Game/seahorse.png">
-                P1
+                P2
+                </div>
+          </div>
+    <!-- scoreboard-->
+          <div class="container-fluid">
+
+              <div  class="col-md-4">
+                <h3> Player One Score: </h3>
+                <p id="playerOneScore"></p>
               </div>
-        </div>
-  <!-- Div row for P2 -->
-        <div class="row">
-            <div class="playerTwo">
-              <img src="file:///users/tiffaniduong/wdi/development/Racing-Game/seahorse.png">
-              P2
+
+              <div class="col-md-4">
+                <h3> Result: </h3>
+                  <p id="result" ></p>
               </div>
-        </div>
-  <!-- scoreboard-->
-        <div class="container-fluid">
 
-            <div  class="col-md-4">
-              <h3> Player One Score: </h3>
-              <p id="playerOneScore"></p>
-            </div>
+              <div  class="col-md-4">
+                <h3> Player Two Score: </h3>
+                <p id= "playerTwoScore"></p>
+              </div>
 
-            <div class="col-md-4">
-              <h3> Result: </h3>
-                <p id="result" ></p>
-            </div>
+          </div>
 
-            <div  class="col-md-4">
-              <h3> Player Two Score: </h3>
-              <p id= "playerTwoScore"></p>
-            </div>
-
-        </div>
-
-  </body>
-</html>
+    </body>
+  </html>
