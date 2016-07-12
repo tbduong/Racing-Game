@@ -11,7 +11,25 @@ $(document).on("ready", function(){
   var MOVE_AMT = 32;
   var CHAR_ONE = 113;
   var CHAR_TWO = 112;
-//function to move:
+
+  var playerOne = {
+      charChode: CHAR_ONE,
+      number: 1,
+      position: 0,
+      $el: $(".player").eq(0),
+      name: "Seahorse 1"
+  };
+  var playerTwo = {
+      charChode: CHAR_TWO,
+      number: 2,
+      position: 0,
+      $el: $(".player").eq(1),
+      name: "Seahorse 2"
+  };
+
+  var players = [playerOne, playerTwo];
+
+
 
 
   //keypress function
