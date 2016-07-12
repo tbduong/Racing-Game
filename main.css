@@ -1,10 +1,10 @@
 .playerOne {
-  position:absolute;
+  position:relative;
   color:white;
 }
 
 .playerTwo {
-  position: absolute;
+  position: relative;
   color:white;
 }
 
